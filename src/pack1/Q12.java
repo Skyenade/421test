@@ -15,11 +15,20 @@ public class Q12 {
 		int size = word.length();
 		
 		for (int i = 0; i < size; i++) {
-			if (word.charAt(i)== 'a' || word.charAt(i)== 'e' || word.charAt(i)== 'i' ||word.charAt(i)== 'o' || word.charAt(i)== 'u') {
+			if (word.charAt(i)== 'a' ||word.charAt(i)== 'A' || word.charAt(i)== 'e' ||word.charAt(i)== 'E' || word.charAt(i)== 'i' ||word.charAt(i)== 'I' || word.charAt(i)== 'o' ||word.charAt(i)== 'O' || word.charAt(i)== 'u' || word.charAt(i)== 'U') {
 				System.out.println(word.charAt(i) + " is a vowel");
 			} else {
 				System.out.println(word.charAt(i) + " is a consonant");
 			}
+			
+		
+		char mychar = kb.next().charAt(0);
+		char lowmychar = Character.toLowerCase(mychar);
+		if (lowmychar == 'a' ||lowmychar == 'e' ||lowmychar == 'i' || lowmychar == 'o' ||lowmychar == 'u') {
+			
+		}
+		
+			
 			
 		}		
 		

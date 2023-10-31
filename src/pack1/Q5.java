@@ -9,11 +9,17 @@ public class Q5 {
 
 		Scanner kb = new Scanner(System.in);
 		System.out.println("Input a number: ");
-		int a = kb.nextInt();
+		double num = kb.nextDouble();
+		double absnum;
 		kb.close();
 		
-		System.out.println(Math.abs(a));
-		
+		if (num < 0) {
+			absnum = (-1) * num;
+		} else {
+			absnum = num;
+		}
+		System.out.println("Absolute number is" + absnum);
+
 	}
 
 }

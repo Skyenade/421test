@@ -14,11 +14,16 @@ public class Q4 {
 		
 		int factorial = 1;
 		
-		for(int i = 1; i<=a;i++) {
-			factorial *= i;
+		if (a < 0) { 
+			System.out.println("Can't do factorial of a negative number");
+			
+		} else {
+			for(int i = 1; i <= a;i++) {
+				factorial *= i;
+			}
+			System.out.println("The factorial of " + a + " is: " + factorial);
 		}
 		
-		System.out.println("The factorial of " + a + " is: " + factorial);
 	}
 
 }

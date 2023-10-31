@@ -10,25 +10,23 @@ public class Q7 {
 		Scanner kb = new Scanner(System.in);
 		System.out.println("Input the numbers: ");
 		int num = kb.nextInt();
-		kb.close();
-		int count = 0;
+		kb.close();		
+		boolean isprime = true;
 		
-		if (num <= 1) {
-			System.out.println("Not a prime number");
-		} else if(num == 2 || num == 3){
-			System.out.println("Is a prime number");
+		if(num<1) {
+			isprime = false;
 		}
-		for (int i = 1; i <= num / 2; i++) {
-			if (num % i == 0) {
-				count++;
+		
+		for (int i = 2; i <= num/2; i++) {
+			if ((num%i)==0) {
+				isprime = false;
 			}
 		}
-		if (count > 1) {
-			System.out.println("Not a prime number");
-		} else {
+		if(isprime) {
 			System.out.println("Is a prime number");
+		} else {
+			System.out.println("Not a prime number");
 		}
-		
 	}
 
 }

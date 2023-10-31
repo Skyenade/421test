@@ -12,14 +12,14 @@ public class Q6 {
 		int a = kb.nextInt();
 		int b = kb.nextInt();
 		kb.close();
-		System.out.println("The first number is " + a);
-		System.out.println("The second number is " + b);
+		System.out.println("Before the swap the first number is " + a);
+		System.out.println("Before the swap the second number is " + b);
 		int c = 0;
 		c = a;
 		a = b;
 		b = c;
-		System.out.println("The first number is " + a);
-		System.out.println("The second number is " + b);
+		System.out.println("After the swap the first number is " + a);
+		System.out.println("After the swap the second number is " + b);
 		
 	}
 
