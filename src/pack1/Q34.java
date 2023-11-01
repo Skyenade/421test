@@ -2,30 +2,22 @@ package pack1;
 
 import java.util.Scanner;
 
-public class Q33 {
+public class Q34 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 		Scanner kb = new Scanner(System.in);
 		System.out.println("Input a number: ");
-		int n = kb.nextInt();
+		int num = kb.nextInt();
 		kb.close();
-		
-		int num = String.valueOf(n).length();
-		int i = 0;
-		
+		int i = 1;
+
 		while (i <= num) {
-			System.out.print(index(i));
+			System.out.println(i + " * " + num + " = " + i * num);
 			i++;
 		}
 		
-	}
-
-	private static char[] index(int n) {
-		// TODO Auto-generated method stub
-		
-		return null;
 	}
 
 }
