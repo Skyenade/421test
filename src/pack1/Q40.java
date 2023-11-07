@@ -2,7 +2,7 @@ package nov11;
 
 import java.util.Scanner;
 
-public class Q32 {
+public class Q40 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -19,14 +19,14 @@ public class Q32 {
 		
 		System.out.println(num1);
 		System.out.println(num2);
-
-		while(i<fib-2) {
+		do {
 			num3 = num1 + num2;
 			num1 = num2;
 			num2 = num3;
 			i++;
 			System.out.println(num3);
 		}
+		while(i<fib-2);
 		
 	}
 

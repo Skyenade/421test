@@ -2,7 +2,7 @@ package nov11;
 
 import java.util.Scanner;
 
-public class Q33 {
+public class Q46 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -11,16 +11,12 @@ public class Q33 {
 		System.out.println("Please enter a number: ");
 		int num = kb.nextInt();
 		kb.close();
-		
-		int rev = 0;
 				
-		while (num != 0) {
-			int remainder = num % 10;
-			rev = rev * 10 + remainder;
-			num = num / 10;
+		for (int count = 1;count<=num;count++) {
+			System.out.println(num + " * " + count + " = " + count *num);
+
 		}
-		System.out.println("The reverse of the number is " + rev);
-		kb.close();
+		
 	}
 
 }

@@ -2,7 +2,7 @@ package nov11;
 
 import java.util.Scanner;
 
-public class Q30 {
+public class Q45 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -11,15 +11,15 @@ public class Q30 {
 		System.out.println("Please enter the value of n: ");
 		int n = kb.nextInt();
 		kb.close();
-		int sum = 0;
-		int counter = 1;
-		while (counter<=n) {
-			sum = sum + counter;
-			counter++;
-		}
-		System.out.println("The sum is: " + sum);
-
 		
+		int factorial = 1;
+		
+			
+		for (int i = 1;i<=n;i++) {
+			factorial *= i;
+		}
+		System.out.println("The factorial is " + factorial);
+
 	}
 
 }

@@ -1,4 +1,4 @@
-package pack1;
+package nov11;
 
 import java.util.Scanner;
 
@@ -7,56 +7,35 @@ public class Q27 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		
 		Scanner kb = new Scanner (System.in);
-		System.out.println("Please give me the month: ");
-		String month = kb.nextLine();
-		int days;
+		System.out.println("Please enter the month number: ");
+		int month = kb.nextInt()		;
 		kb.close();
 		
+		int days = 0;
+		
 		switch(month) {
-		case "January":
-			days = 31;
-			break;
-		case "February":
-			days = 28;
-			break;
-		case "March":
-			days = 31;
-			break;
-		case "April":
-			days = 30;
-			break;
-		case "May":
-			days = 31;
-			break;
-		case "June":
-			days = 30;
-			break;
-		case "July":
-			days = 31;
-			break;
-		case "August":
-			days = 31;
-			break;
-		case "September":
-			days = 30;
-			break;
-		case "October":
-			days = 31;
-			break;
-		case "November":
-			days = 30;
-			break;
-		case "December":
-			days = 31;
-			break;
-		default:
-			days = 0;
-			break;
+			case 1:
+			case 3:
+			case 5:
+			case 7:
+			case 8:
+			case 10:
+			case 12:
+				days = 31;
+				break;
+			case 4:
+			case 6:
+			case 9:
+			case 11:
+				days = 30;
+				break;
+			case 2:
+				days = 28;
+				break;			
 		}
-		System.out.println("Based on the name the month there are " + days + " days");
-
+		System.out.println("The month has " + days + " days");
+		
 	}
 
 }
