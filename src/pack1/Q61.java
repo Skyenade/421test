@@ -17,6 +17,6 @@ public class Q61{
         }
 
         System.out.println("The biggest number is " + maxcount);
-        System.out.println("The second biggest number is " + secondmaxcount
+        System.out.println("The second biggest number is " + secondmaxcount);
 	}
 }

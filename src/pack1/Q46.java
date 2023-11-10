@@ -1,4 +1,4 @@
-package nov11;
+package pack1;
 
 import java.util.Scanner;
 

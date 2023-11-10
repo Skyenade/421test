@@ -1,4 +1,4 @@
-package nov11;
+package pack1;
 
 public class Q47 {
 
