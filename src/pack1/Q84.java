@@ -1,4 +1,4 @@
-package nov11;
+package pack1;
 
 public class Q84 {
 
@@ -9,14 +9,14 @@ public class Q84 {
 		
 		System.out.println("Original array: ");
 		for(int i = 0; i<array.length;i++) {
-			System.out.print(i + " ");
+			System.out.print(array[i] + " ");
 		}
 		
 		elements(array);
 		
 		System.out.println("\nNew array: ");
 		for(int i = 0; i<array.length;i++) {
-			System.out.print(i + " ");
+			System.out.print(array[i] + " ");
 		}
 		
 		
