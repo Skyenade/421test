@@ -20,12 +20,10 @@ public class Q77 {
 
         int lastElement = array[array.length - 1];
 
-        // Shift elements to the right
         for (int i = array.length - 1; i > 0; i--) {
             array[i] = array[i - 1];
         }
 
-        // Move the last element to the first position
         array[0] = lastElement;
     }
 
