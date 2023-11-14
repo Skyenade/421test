@@ -10,6 +10,7 @@ public class Q85 {
 		Scanner kb = new Scanner(System.in);
 		System.out.println("Please enter a number: ");
 		int num = kb.nextInt();
+		kb.close();
 		
 		System.out.println("Input number is " + num);
 		
