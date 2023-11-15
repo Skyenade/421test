@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Q59{
 	public static void main(String[] args){
 		
-		int[] array = {2,4,6,8,10,12,14,15,16,16,17};
+	int[] array = {2,4,6,8,10,12,14,15,16,16,17};
 
         System.out.println("Original Array: " + Arrays.toString(array));
 
