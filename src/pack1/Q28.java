@@ -4,16 +4,22 @@ import java.util.Scanner;
 
 public class Q28 {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+    public static void main(String[] args) {
+        Scanner kb = new Scanner(System.in);
 
-		Scanner kb = new Scanner(System.in);
-		System.out.println("Please enter a letter: ");
-		char letter = kb.next().charAt(0);
-		kb.close();
-		
-//		char lowercase = 
-		
-	}
+        System.out.print("Enter a character: ");
+        char inputChar = kb.next().charAt(0);
 
+        switch (Character.toLowerCase(inputChar)) {
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+                System.out.println(inputChar + " is a vowel.");
+                break;
+            default:
+                System.out.println(inputChar + " is a consonant.");
+        }
+    }
 }
