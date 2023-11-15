@@ -9,6 +9,7 @@ public class Q28 {
 
         System.out.print("Enter a character: ");
         char inputChar = kb.next().charAt(0);
+		kb.close();
 
         switch (Character.toLowerCase(inputChar)) {
             case 'a':
