@@ -7,11 +7,13 @@ public class Q87 {
     public static void main(String[] args) {
         double count = 0;
         double sum = 0;
-        double average = 0; // Move the declaration outside the loop
+        double average = 0; 
 
         Scanner kb = new Scanner(System.in);
+        System.out.println("Please enter the amount of number you will enter: ");
+        int times = kb.nextInt();
 
-        while (true) {
+        while (times > 0) {
             System.out.println("Please enter a number: ");
             double num = kb.nextDouble();
 
@@ -22,9 +24,10 @@ public class Q87 {
             } else {
                 break;
             }
+            times -= 1;
         }
 
-        kb.close(); // Close the Scanner after the loop
+        kb.close();
         System.out.println("Average: " + average);
     }
 }
