@@ -9,28 +9,49 @@ public class Q90g {
 
 		Scanner kb = new Scanner(System.in);
 		System.out.println("Please enter a number: ");
-		int line = kb.nextInt();
+		int n = kb.nextInt();
 		kb.close();
 		
-		for (int i = 0; i<= line; i++) {
-			for (int j = 0; j< line - i; j++) {
-				System.out.print(" ");
-			}
-			for (int k = 0; k <i; k++) {
-				System.out.print("* ");
-			}
-			System.out.println();
-		}
-		
-		for(int i = 0; i <= line; i++) {
-			for (int j = 0; j<i;j++) {
-				System.out.print(" ");
-			}
-			for (int k = 0; k < line -i;k++) {
-				System.out.print("* ");
-			}
-			System.out.println();
-		}
+		for (int i = 1; i <= n; i++) {
+            // Print spaces before the numbers
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print(" ");
+            }
+
+            // Print decreasing numbers
+            for (int j = i; j >= 1; j--) {
+                System.out.print(j);
+            }
+
+            // Print increasing numbers excluding the first
+            for (int j = 2; j <= i; j++) {
+                System.out.print(j);
+            }
+
+            // Move to the next line after each row
+            System.out.println();
+        }
+
+        // Print lower part of the pattern
+        for (int i = n - 1; i >= 1; i--) {
+            // Print spaces before the numbers
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print(" ");
+            }
+
+            // Print decreasing numbers
+            for (int j = i; j >= 1; j--) {
+                System.out.print(j);
+            }
+
+            // Print increasing numbers excluding the first
+            for (int j = 2; j <= i; j++) {
+                System.out.print(j);
+            }
+
+            // Move to the next line after each row
+            System.out.println();
+        }
 	}
 
 }
